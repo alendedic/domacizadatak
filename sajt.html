@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amplitudo doo</title>
+    <meta charset="utf-8">
+
+    <style>
+        @font-face{
+            font-family: prvi;
+            src: url(fonts/PlayfairDisplay-Regular.ttf);}
+        @font-face{
+            font-family: light;
+            src: url(fonts/Roboto-Light.ttf);}
+        @font-face{
+            font-family: treci;
+            src: url(fonts/Roboto-MediumItalic.ttf);}
+        @font-face{
+            font-family: cetvrti;
+            src: url(fonts/Roboto-Medium.ttf);}
+        @font-face{
+            font-family: peti;
+            src: url(fonts/Roboto-Bold.ttf);}
+        #slika {
+            padding: 0;
+            margin: 0;
+            background: url(imgs/path.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 500px;
+            right: 0;
+            bottom: 0;
+            position: fixed;
+        }
+        .logo {
+            margin: 50px 0;
+        }
+        .box {
+            padding: 25px;
+            margin-top: 60px;
+            width: 100%;
+            height: auto;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 5px 14px #00000022;
+            border-radius: 3px;
+            opacity: 1;
+            z-index: 9999;
+            position: relative;
+        }
+        .box form label {
+            color: #505050;
+        }
+        .box form input {
+            font-family: cetvrti;
+            padding: 10px 20px;
+            height: auto;
+        }
+        .box form button {
+            width: 100%;
+            background: #00B8B0;
+            color: #fff;
+            text-transform: uppercase;
+            border: none;
+            padding: 15px 20px;
+        }
+        .webText {
+            margin: 20px 0;
+        }
+        .webText h1 {
+            letter-spacing: 0;
+            color: #505050;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .webText h5 {
+            margin: 50px 0;
+            letter-spacing: 0;
+            color: #505050;
+            font-size: 25px;
+            font-weight: 300;
+        }
+        .webText h5 span {
+            color: #00B8B0;
+        }
+        .links {
+            z-index: 9999;
+            text-align: center;
+            position: relative;
+            margi
+        }
+        .links li {
+            display: inline-block;
+            padding: 15px;
+        }
+        .container{
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-5">
+            <div class="logo">
+                <img src="imgs/logo.png" alt="Logo ej">
+            </div>
+
+            <div class="webText">
+                <h1>U čast odlazeće 2018. godine Amplitudo poklanja besplatan website!</h1> <hr>
+                <h5>Popunite formu i prijavite se za <b><i>besplatan</i></b> website u iznosu od <span>2000€!</span></h5>
+                <h5>Prijave traju do <span>25.12.2018. u 12 sati,</span> kasda ćemo izvačiti dobitnika, a možda ime Vaše firme bude u srećnoj koverti! Počnite 2019. godinu sa novom web prezentacijom!</h5>
+            </div>
+        </div>
+
+        <div class="col-md-1"></div>
+
+        <div class="col-12 col-md-5">
+            <div class="box">
+                <form action="/prijava.html" method="POST" autocomplete="off">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Naziv firme</label>
+                            <input type="text" name="firma" class="form-control" required="">
+                        </div>
+                    </div> <br>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Kontakt osoba</label>
+                            <input type="text" name="fName" class="form-control" required="">
+                        </div>
+                    </div> <br>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Email</label>
+                            <input type="email" name="Email" class="form-control" required="">
+                        </div>
+                    </div> <br>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Broj telefona</label>
+                            <input type="phone" name="Phone" class="form-control" required="">
+                        </div>
+                    </div> <br>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Website</label>
+                            <input type="text" name="Site" class="form-control" required="">
+                        </div>
+                    </div> <br>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <button class="btn btn-primary">Prijavite se</button>
+                        </div>
+                    </div> <div class="clearfix"></div>
+                </form>
+            </div>
+            <div class="links">
+                <li>
+                    <a href="https://www.facebook.com/AmplitudoCG" target="_blank">
+                        <img src="imgs/facebook.png" target="_blank" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/amplitudo-d-o-o-" target="_blank">
+                        <img src="imgs/linkedin.png" alt="Linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/amplitudo.me" target="_blank">
+                        <img src="imgs/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <div id="slika"></div>
+</body>
+</html>

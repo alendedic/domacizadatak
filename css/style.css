@@ -1,0 +1,192 @@
+/* Fontovi */
+@font-face{
+    font-family: prvi;
+    src: url('../fonts/PlayfairDisplay-Regular.woff');}
+@font-face{
+    font-family: light;
+    src: url('../fonts/Roboto-Light.woff');}
+@font-face{
+    font-family: treci;
+    src: url('../fonts/Roboto-MediumItalic.woff');}
+@font-face{
+    font-family: cetvrti;
+    src: url('../fonts/Roboto-Medium.woff');}
+@font-face{
+    font-family: peti;
+    src: url('../fonts/Roboto-Bold.woff');}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Body */
+body {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+
+    background: transparent url('../images/bg.png') 0% 0% no-repeat padding-box;
+    background-position: bottom right;
+    background-position: 200px 250px
+
+}
+.space {
+    margin-top: 45px;
+}
+.container {
+    width: 1110px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.rows {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.logo a img {
+    width: 254px;
+    height: 97px;
+}
+.side {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    font-family: prvi;
+    letter-spacing: 0;
+    color: #505050;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+hr {
+    border: 1px solid #DADADA;
+    width: 460px;
+}
+h2 {
+    margin-top: 75px;
+    font-family: light;
+    font-weight: 300;
+    color: #505050;
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+h2 b {
+    font-weight: 700;
+}
+.green {
+    color: #00B8B0;
+}
+/* H4 */
+h4 {
+    font-family: light;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.box {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 14px #00000022;
+    border-radius: 3px;
+    padding: 40px;
+    width: 445px;
+    max-width: 100%;
+    margin-top: -40px;
+}
+.box form {
+    width: 100%;
+}
+.box .input-box {
+    margin-bottom: 30px;
+
+}
+.box .input-box label {
+    color: #505050;
+    letter-spacing: 0px;
+    font-size: 18px;
+    margin-bottom: 7px;
+    display: block;
+    font-family: light;
+}
+.box .input-box input {
+    width: 100%;
+    border: 1px solid #DADADA;
+    border-radius: 3px;
+    height: 60px;
+    color: #000;
+    font-size: 18px;
+    padding-left: 20px;
+    display: block;
+    font-family: cetvrti;
+}
+/* Prijavi se dugme */
+.button {
+    font-family: 'Roboto', sans-serif;
+    width: 213px;
+    height: 60px;
+    background: #00B8B0 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+    border: none;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+/* Flex box sistem */
+.row,
+.column {
+    box-sizing: border-box;
+}
+.row:after {
+    clear: both;
+}
+.column {
+    color: #fff;
+    padding: 20px;
+    min-height: 30px;
+    margin-bottom: 10px;
+}
+.row:last-child .column:last-child {
+    margin-bottom: 0;
+}
+.column + .column {
+    margin-left: 0;
+}
+.column-4,
+.column-6{
+    width: auto;
+    float: none;
+}
+@media only screen and (min-width: 768px) {
+    .column {
+        position: relative;
+        float: left;
+        margin-bottom: 0;
+    }
+    .column + .column {
+        margin-left: 1.6%;
+    }
+    .row {
+        margin-bottom: 10px;
+    }
+    .row .row:last-child {
+        margin-bottom: 0;
+    }
+    .column-4 {
+        width: 32.2666666667%;
+    }
+    .column-6 {
+        width: 49.2%;
+    }
+}
+/* Linkovi / povezane slike */
+.links {
+    z-index: 9999;
+    text-align: center;
+    position: relative;
+}
+.links li {
+    display: inline-block;
+    padding: 15px;
+}
